@@ -11,7 +11,8 @@ createRoot(document.getElementById('root')).render(
   <Context>
 
 
-    <BrowserRouter>
+  {/* Use Vite's BASE_URL as basename so routing works under /Warm-up-react on GitHub Pages */}
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
       <App />
       <ToastContainer/>
     </BrowserRouter>
